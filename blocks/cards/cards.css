@@ -1,31 +1,103 @@
-.cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 16px;
-}
-
-.cards > ul > li {
-  border: 1px solid var(--highlight-background-color);
-  background-color: var(--background-color)
+.cards, .bigcard {
+    max-width: 960px;
+    width: 100%;
+    padding-top: 32px;
+    margin-bottom: 32px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+    margin: 0px;
+    border-top: 5px solid #0093d0;
+    padding-bottom: 48px;
+    background-color: #fff;
+}
+
+.cards > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(258px, 1fr));
+    grid-gap: 32px;
+}
+
+.cards .cards-card-title {
+    text-align: center;
+}
+
+.cards .cards-card-title h3 {
+    --link-color: #000;
+    --link-hover-color: #000;
+    margin: 0;
+    padding: 30px 20px 0px;
+    font-family: "Proxima Nova Condensed", serif;
+    font-weight: 600;
+    font-size: 23px;
+    text-transform: uppercase;
+    min-height: 100px;
+}
+
+.cards .cards-card-title h3:hover {
+    text-decoration: underline;
 }
 
 .cards .cards-card-image {
-  line-height: 0;
+    line-height: 0;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .cards .cards-card-body > *:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+    width: 100%;
+}
+
+.bigcard {
+    background-color: #fff;
+    padding-top: 0px;
+}
+
+.bigcard div:nth-child(1) {
+    display: flex;
+}
+
+.bigcard div p {
+    font-size: 29px;
+    word-spacing: 3px;
+    color: #0093D0;
+    display: inline-block;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+.bigcard div:nth-child(1) div:nth-child(2) p:nth-child(1) {
+    margin-top: 32px;
+}
+.bigcard div:nth-child(1) div:nth-child(2) p:nth-child(2) {
+    margin-top: 18px;
+}
+
+.bigcard .button-container {
+    border: 1px solid #0093D0;
+    float: right;
+    padding: 10px;
+    margin-top: 124px;
+    margin-right: 40px;
+}
+
+.bigcard .button-container a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #0093D0;
+}
+
+.bigcard img {
+    height: 250px;
+    width: 290px;
+    padding: 37px 35px 37px !important;
 }
