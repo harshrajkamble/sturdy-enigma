@@ -1,2 +1,3 @@
 mountpoints:
-  /: https://pfizer.sharepoint.com/:f:/s/TestHKHLX/EpfDy0LtoqRPqILwmNsaNwUBjkiA3QsfsZVg2wnYM76jsA?e=r90LwB
+  # /: https://pfizer.sharepoint.com/:f:/s/TestHKHLX/EpfDy0LtoqRPqILwmNsaNwUBjkiA3QsfsZVg2wnYM76jsA?e=r90LwB
+  /: https://pfizer.sharepoint.com/sites/AdobeFranklinPilots/Shared%20Documents/FranklinSites/sites/acromegaliebe
