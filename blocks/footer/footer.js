@@ -1,4 +1,6 @@
 import { readBlockConfig, decorateIcons } from '../../scripts/lib-franklin.js';
+import { loadScript } from '../../scripts/utilities.js';
+
 
 /**
  * loads and decorates the footer
@@ -19,7 +21,7 @@ export default async function decorate(block) {
   await decorateIcons(footer);
   block.append(footer);
 
-  // var script = document.createElement('script');
-  // script.setAttribute( 'src', '/assets/js/brightcove.js' );
-  // block.append(script);
+  var script = document.createElement('script');
+  script.setAttribute( 'src', '/assets/js/brightcove.js' );
+  block.append(script);
 }
